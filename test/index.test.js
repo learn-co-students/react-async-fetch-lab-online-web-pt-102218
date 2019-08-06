@@ -23,6 +23,10 @@ describe('<App />', () => {
 
   })
 
+  after(() => {
+    fetchMock.restore();
+  })
+
 
 
   //tests specific method within a class
